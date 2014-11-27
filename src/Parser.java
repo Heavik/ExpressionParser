@@ -37,7 +37,7 @@ public class Parser {
                 Character c = str.charAt(pos);
                 if (c == '(')
                     nBrackets++;
-                if (c == ')')
+                else if (c == ')')
                     nBrackets--;
                 if (nBrackets < 0)
                     return str;
@@ -76,7 +76,7 @@ public class Parser {
             Character c = str.charAt(pos);
             if (c == '(')
                 nBrackets++;
-            if (c == ')')
+            else if (c == ')')
                 nBrackets--;
             if (priorityOperator(c) == priority && nBrackets == 0)
                 return pos;
