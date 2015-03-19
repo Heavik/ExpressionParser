@@ -4,7 +4,7 @@
 
 public class Parser {
 
-    public static int parse(String str) {
+    public int parse(String str) {
         // Удаляем пробелы и внешние скобки.
         str = removeLeadingBrackets(str.replace(" ", ""));
         // Проверяем, является ли строка числом.
